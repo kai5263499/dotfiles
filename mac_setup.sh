@@ -90,7 +90,6 @@ function setup_brew {
 	grammarly \
 	intellij-idea-ce \
 	iterm2 \
-	iterm2 \
 	java7 \
 	knockknock \
 	kodi \
