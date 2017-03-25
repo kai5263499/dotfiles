@@ -323,13 +323,13 @@ while getopts "b?" opt; do
     esac
 done
 
-ffmpeg -i "$1" -filter:a "atempo=2.0" -c:a libmp3lame -q:a 4 tmp.mp3
+ffmpeg -i "\$1" -filter:a "atempo=2.0" -c:a libmp3lame -q:a 4 tmp.mp3
 
-if [[ $BACKUP_ORIGIONAL == true ]]; then
-	mv "$1" "${1}-slow"
+if [[ \$BACKUP_ORIGIONAL == true ]]; then
+	mv "\$1" "\${1}-slow"
 fi
 
-mv tmp.mp3 "$1"
+mv tmp.mp3 "\$1"
 EOL
 	chmod +x /usr/local/bin/sua
 }
